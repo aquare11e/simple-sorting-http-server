@@ -8,7 +8,7 @@ For build this project on Linux you need download it (e.g. using curl or wget), 
 
 ```bash
 #compile
-mcs Program.cs
+dmcs Program.cs
 
 #run background process
 exec mono Program.exe &
