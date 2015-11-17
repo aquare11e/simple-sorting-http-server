@@ -19,19 +19,19 @@ On Windows download and compile project using Mono or Visual Studio.
 
 For use server, open the Web-browser and tape:
 ```
-http://<your-ip>:8800/?concurrency=<NUMBER_OF_THREADS>&sort=<ARRAY_OF_INT_URL>
+http://<YOUR-IP>:8800/?concurrency=<NUMBER_OF_THREADS>&sort=<ARRAY_OF_INT_URL>
 ```
 Command for send request to sort array. It returns the Job ID or error description.
 
 ```
-http://<your-ip>:8800/?get=<JobID>
+http://<YOUR-IP>:8800/?get=<JobID>
 ```
 Command for get sorting result. It returns JSON object with request status (field "state") and sorted array (field "data"), if sort is finished.
 Field "state" can be: "ready" - sort is finished, "queued" - request in the queue, "progress" - request in the sorting process.
 
 Where:
-<your-ip> - IP computer with a running process (if process runned on current machine use "localhost" or "127.0.0.1");
-<NUMBER_OF_THREADS> - number of threads for sorting algorithm;
-<ARRAY_OF_INT_URL> - resource URL with array of integer for sorting;
-<JobID> - Sorting job ID 
+YOUR-IP - IP computer with a running process (if process runned on current machine use "localhost" or "127.0.0.1");
+NUMBER_OF_THREADS - number of threads for sorting algorithm;
+ARRAY_OF_INT_URL - resource URL with array of integer for sorting;
+JobID - Sorting job ID 
 
